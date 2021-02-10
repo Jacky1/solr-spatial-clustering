@@ -52,7 +52,7 @@ public final class ResultFormatter {
             clusterNode.add(KEY_LONGITUDE, cluster.getCoords()[0]);
             clusterNode.add(KEY_LATITUDE, cluster.getCoords()[1]);
 
-            if (cluster.getCount() == 1) {
+            if (cluster.getCount() == 1 || cluster.getCount() == 2) {
                 clusterNode.add(KEY_REFERENCE, cluster.getKey());
             }
 
@@ -73,7 +73,7 @@ public final class ResultFormatter {
             clusterNode.put(KEY_LONGITUDE, cluster.getCoords()[0]);
             clusterNode.put(KEY_LATITUDE, cluster.getCoords()[1]);
 
-            if (cluster.getCount() == 1) {
+            if (cluster.getCount() == 1 || cluster.getCount() == 2) {
                 clusterNode.put(KEY_REFERENCE, cluster.getKey());
             }
 
